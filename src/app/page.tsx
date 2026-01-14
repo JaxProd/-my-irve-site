@@ -28,9 +28,8 @@ export default function Home()
             IRVE_<span className="text-cyan-400">PRO</span>
         </div>
         <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-            <a href="#" className="hover:text-white transition-colors">Marché</a>
-            <a href="#" className="hover:text-white transition-colors">Calculateur</a>
-            <a href="/admin" className="text-cyan-400">Backoffice</a>
+            <a href="/devenir-partenaire" className="hover:text-cyan-400 transition-colors">Installateurs</a>
+            <a href="/admin" className="text-cyan-400">Espace Admin</a>
         </div>
       </nav>
 

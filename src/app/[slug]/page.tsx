@@ -116,8 +116,9 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest">
-        IRVE_PRO — Expert local à {city.name}
+      <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest flex flex-col gap-4">
+        <div>IRVE_PRO — Expert local à {city.name}</div>
+        <a href="/devenir-partenaire" className="text-slate-800 hover:text-cyan-800 transition-colors">VOUS ÊTES INSTALLATEUR À {city.name.toUpperCase()} ? REJOINGNEZ-NOUS</a>
       </footer>
     </main>
   );

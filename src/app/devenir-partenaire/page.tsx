@@ -106,21 +106,47 @@ export default function DevenirPartenaire()
                 ))}
             </div>
 
-            {/* CTA FORM SIMULATION */}
+            {/* CTA FORM SECTION */}
             <div className="mt-20 max-w-xl mx-auto glass p-10 rounded-[3rem] border-glow relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 blur-3xl rounded-full"></div>
                 <h3 className="text-center text-white font-bold mb-8">Rejoindre le réseau IRVE_PRO</h3>
-                <div className="space-y-4">
-                    <input type="text" placeholder="Nom de l'entreprise" className="w-full bg-slate-900 border border-white/5 p-4 rounded-2xl outline-none focus:border-cyan-500/50" />
-                    <input type="text" placeholder="Numéro SIRET" className="w-full bg-slate-900 border border-white/5 p-4 rounded-2xl outline-none focus:border-cyan-500/50" />
-                    <input type="email" placeholder="Email professionnel" className="w-full bg-slate-900 border border-white/5 p-4 rounded-2xl outline-none focus:border-cyan-500/50" />
-                    <button className="w-full bg-cyan-500 text-black font-black py-5 rounded-2xl mt-4 hover:shadow-cyan-500/20 shadow-xl transition-all uppercase tracking-widest text-xs">
+                
+                <form 
+                  action="https://formspree.io/f/mzddblkk" 
+                  method="POST" 
+                  className="space-y-4"
+                >
+                    <input 
+                      type="text" 
+                      name="societe"
+                      required
+                      placeholder="Nom de l'entreprise" 
+                      className="w-full bg-slate-900 border border-white/5 p-4 rounded-2xl outline-none focus:border-cyan-500/50" 
+                    />
+                    <input 
+                      type="text" 
+                      name="siret"
+                      required
+                      placeholder="Numéro SIRET" 
+                      className="w-full bg-slate-900 border border-white/5 p-4 rounded-2xl outline-none focus:border-cyan-500/50" 
+                    />
+                    <input 
+                      type="email" 
+                      name="email"
+                      required
+                      placeholder="Email professionnel" 
+                      className="w-full bg-slate-900 border border-white/5 p-4 rounded-2xl outline-none focus:border-cyan-500/50" 
+                    />
+                    <button 
+                      type="submit"
+                      className="w-full bg-cyan-500 text-black font-black py-5 rounded-2xl mt-4 hover:shadow-cyan-500/20 shadow-xl transition-all uppercase tracking-widest text-xs cursor-pointer"
+                    >
                         Lancer mon essai gratuit
                     </button>
                     <p className="text-[9px] text-center text-slate-600 mt-4 italic">
                         En cliquant, vous certifiez être titulaire de la mention IRVE.
                     </p>
-                </div>
+                </form>
             </div>
         </div>
       </section>
