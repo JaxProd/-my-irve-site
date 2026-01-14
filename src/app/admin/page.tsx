@@ -17,7 +17,7 @@ export default function AdminOverview()
         {/* HEADER */}
         <header className="flex justify-between items-center mb-12 border-b border-white/5 pb-8">
           <div>
-            <div className="flex items-center gap-2 text-blue-500 mb-2">
+            <div className="flex items-center gap-2 text-cyan-500 mb-2">
               <span className="material-symbols-outlined">electric_car</span>
               <span className="text-xs font-bold uppercase tracking-widest">Backoffice IRVE-PRO</span>
             </div>
@@ -41,15 +41,15 @@ export default function AdminOverview()
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                  <div className="text-blue-500 font-black text-3xl mb-1">+37%</div>
+                  <div className="text-cyan-500 font-black text-3xl mb-1">+37%</div>
                   <div className="text-[10px] text-slate-500 uppercase font-bold">Croissance Annuelle (EV)</div>
                 </div>
                 <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                  <div className="text-blue-500 font-black text-3xl mb-1">35€ - 65€</div>
+                  <div className="text-cyan-500 font-black text-3xl mb-1">35€ - 65€</div>
                   <div className="text-[10px] text-slate-500 uppercase font-bold">Prix Lead Qualifié</div>
                 </div>
                 <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                  <div className="text-blue-500 font-black text-3xl mb-1">Mois 4</div>
+                  <div className="text-cyan-500 font-black text-3xl mb-1">Mois 4</div>
                   <div className="text-[10px] text-slate-500 uppercase font-bold">ROI Estimé (Break-Even)</div>
                 </div>
               </div>
@@ -63,11 +63,11 @@ export default function AdminOverview()
                 <p className="text-sm text-slate-500 mb-4">1500 pages villes, scraping pros locaux.</p>
                 <div className="text-blue-400 font-black italic">0€ - 150€ / mo</div>
               </div>
-              <div className="glass p-8 rounded-[2rem] border-blue-500/20 bg-blue-500/5">
-                <div className="text-xs font-bold text-blue-500 uppercase mb-4">M6 - M12</div>
+              <div className="glass p-8 rounded-[2rem] border-cyan-500/20 bg-cyan-500/5">
+                <div className="text-xs font-bold text-cyan-500 uppercase mb-4">M6 - M12</div>
                 <h3 className="text-lg font-bold text-white mb-2">Maturité SEO</h3>
                 <p className="text-sm text-slate-400 mb-4">Maillage automatisé, 10 leads/semaine.</p>
-                <div className="text-blue-400 font-black italic text-xl">1 200€ - 3 500€ / mo</div>
+                <div className="text-cyan-400 font-black italic text-xl">1 200€ - 3 500€ / mo</div>
               </div>
               <div className="glass p-8 rounded-[2rem] border-white/5">
                 <div className="text-xs font-bold text-slate-500 uppercase mb-4">2 ans +</div>
@@ -89,15 +89,15 @@ export default function AdminOverview()
               <div className="space-y-6">
                 <div>
                   <label className="block text-[10px] font-bold text-slate-500 uppercase mb-2">Trafic SEO Mensuel: {traffic.toLocaleString()}</label>
-                  <input type="range" min="500" max="10000" step="100" value={traffic} onChange={(e) => setTraffic(Number(e.target.value))} className="w-full accent-blue-500" />
+                  <input type="range" min="500" max="10000" step="100" value={traffic} onChange={(e) => setTraffic(Number(e.target.value))} className="w-full accent-cyan-500" />
                 </div>
                 <div>
                   <label className="block text-[10px] font-bold text-slate-500 uppercase mb-2">Taux Conv (%): {convRate}%</label>
-                  <input type="range" min="0.5" max="5" step="0.1" value={convRate} onChange={(e) => setConvRate(Number(e.target.value))} className="w-full accent-blue-500" />
+                  <input type="range" min="0.5" max="5" step="0.1" value={convRate} onChange={(e) => setConvRate(Number(e.target.value))} className="w-full accent-cyan-500" />
                 </div>
                 <div>
                   <label className="block text-[10px] font-bold text-slate-500 uppercase mb-2">Prix par Lead: {leadPrice}€</label>
-                  <input type="range" min="20" max="100" step="5" value={leadPrice} onChange={(e) => setLeadPrice(Number(e.target.value))} className="w-full accent-blue-500" />
+                  <input type="range" min="20" max="100" step="5" value={leadPrice} onChange={(e) => setLeadPrice(Number(e.target.value))} className="w-full accent-cyan-500" />
                 </div>
 
                 <div className="pt-6 border-t border-white/10 mt-6">
@@ -107,7 +107,7 @@ export default function AdminOverview()
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-slate-400 text-sm">Revenu Estimé</span>
-                    <span className="text-2xl font-black text-blue-500 italic">{revenue.toLocaleString()} €</span>
+                    <span className="text-2xl font-black text-cyan-500 italic">{revenue.toLocaleString()} €</span>
                   </div>
                 </div>
               </div>

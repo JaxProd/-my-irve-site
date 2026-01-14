@@ -71,18 +71,18 @@ export default function AdminStats()
       <div className="max-w-7xl mx-auto">
         <header className="mb-12 flex justify-between items-end">
           <div>
-            <div className="flex items-center gap-2 text-blue-500 mb-2">
-              <span className="material-symbols-outlined text-sm text-blue-500">query_stats</span>
+            <div className="flex items-center gap-2 text-cyan-500 mb-2">
+              <span className="material-symbols-outlined text-sm text-cyan-500">query_stats</span>
               <span className="text-xs font-bold uppercase tracking-widest">Analyse de Marché</span>
             </div>
             <h1 className="text-4xl font-black text-white mb-2">Potentiel par Ville</h1>
             <p className="text-slate-500">Analyse du besoin en bornes sur {cities.length} villes.</p>
           </div>
           <div className="flex gap-4">
-            <a href="/admin" className="bg-white/5 hover:bg-white/10 px-6 py-3 rounded-xl text-sm font-bold border border-white/10 transition-all">
+            <a href="/admin" className="bg-white/5 hover:bg-cyan-500/10 hover:text-cyan-400 px-6 py-3 rounded-xl text-sm font-bold border border-white/10 transition-all">
                 Vision Business
             </a>
-            <div className="bg-slate-900 border border-white/10 rounded-xl p-2 flex items-center">
+            <div className="bg-slate-900 border border-white/10 rounded-xl p-2 flex items-center focus-within:border-cyan-500/50 transition-all">
                 <span className="material-symbols-outlined px-2 text-slate-500">search</span>
                 <input 
                     type="text" 
@@ -103,7 +103,7 @@ export default function AdminStats()
                 <th className="p-6 cursor-pointer hover:text-white" onClick={() => requestSort('zip')}>CP</th>
                 <th className="p-6 cursor-pointer hover:text-white text-right" onClick={() => requestSort('population')}>Population</th>
                 <th className="p-6 cursor-pointer hover:text-white text-right" onClick={() => requestSort('bornes')}>Bornes</th>
-                <th className="p-6 cursor-pointer hover:text-white text-right text-blue-500" onClick={() => requestSort('score')}>Score Potentiel</th>
+                <th className="p-6 cursor-pointer hover:text-white text-right text-cyan-500" onClick={() => requestSort('score')}>Score Potentiel</th>
                 <th className="p-6 text-center">Action</th>
               </tr>
             </thead>
@@ -116,14 +116,14 @@ export default function AdminStats()
                   <td className="p-6 text-right tabular-nums">
                     <span className={city.bornes === 0 ? "text-red-500/50" : ""}>{city.bornes}</span>
                   </td>
-                  <td className="p-6 text-right font-black text-blue-400 tabular-nums">
+                  <td className="p-6 text-right font-black text-cyan-400 tabular-nums">
                     {city.score.toLocaleString()}
                   </td>
                   <td className="p-6 text-center">
                     <a 
                         href={`/${city.slug}`} 
                         target="_blank"
-                        className="text-[10px] font-bold uppercase tracking-tighter bg-white/5 px-3 py-1 rounded-full group-hover:bg-blue-600 transition-all"
+                        className="text-[10px] font-bold uppercase tracking-tighter bg-white/5 px-3 py-1 rounded-full group-hover:bg-cyan-600 group-hover:text-white transition-all"
                     >
                         Voir
                     </a>
