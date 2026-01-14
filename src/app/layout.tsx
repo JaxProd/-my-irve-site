@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code,data_object,distance,electric_car,hub,lightbulb,link,payments,query_stats,radio_button_unchecked,search,trending_up,verified" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code,data_object,distance,electric_car,hub,lightbulb,link,payments,person,query_stats,radio_button_unchecked,search,security,sync_alt,timer,trending_up,verified" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
