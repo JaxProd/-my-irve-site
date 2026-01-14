@@ -8,7 +8,7 @@ export default function DevenirPartenaire()
       <nav className="p-6 flex justify-between items-center absolute w-full z-50">
         <a href="/" className="font-black text-xl tracking-tighter text-white flex items-center gap-2">
             <span className="material-symbols-outlined text-cyan-400">electric_car</span>
-            IRVE_<span className="text-cyan-400">PRO</span>
+            MaBorne<span className="text-cyan-400">Recharge</span>
         </a>
         <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-slate-400">
             <a href="/" className="hover:text-white transition-colors">Accueil</a>
@@ -109,7 +109,7 @@ export default function DevenirPartenaire()
             {/* CTA FORM SECTION */}
             <div className="mt-20 max-w-xl mx-auto glass p-10 rounded-[3rem] border-glow relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 blur-3xl rounded-full"></div>
-                <h3 className="text-center text-white font-bold mb-8">Rejoindre le réseau IRVE_PRO</h3>
+                <h3 className="text-center text-white font-bold mb-8">Rejoindre le réseau MaBorneRecharge</h3>
                 
                 <form 
                   action="https://formspree.io/f/mzddblkk" 
@@ -153,7 +153,7 @@ export default function DevenirPartenaire()
 
       {/* FOOTER */}
       <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest">
-        © 2026 IRVE_PRO — Espace Partenaires Agréés
+        © 2026 MaBorneRecharge — Espace Partenaires Agréés
       </footer>
     </main>
   );

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IRVE PRO - Expert en installation de bornes de recharge",
-  description: "Installation certifiée de bornes de recharge pour véhicules électriques. Devis gratuit en 48h.",
+  title: "MaBorneRecharge - Expert en installation de bornes de recharge",
+  description: "Bénéficiez d'une installation certifiée avec MaBorneRecharge. Devis gratuit en 48h partout en France.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code,data_object,distance,electric_car,hub,link,query_stats,radio_button_unchecked,search,verified" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code,data_object,distance,electric_car,hub,lightbulb,link,payments,query_stats,radio_button_unchecked,search,trending_up,verified" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

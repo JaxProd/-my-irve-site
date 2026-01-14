@@ -19,9 +19,9 @@ export default function AdminOverview()
           <div>
             <div className="flex items-center gap-2 text-cyan-500 mb-2">
               <span className="material-symbols-outlined">electric_car</span>
-              <span className="text-xs font-bold uppercase tracking-widest">Backoffice IRVE-PRO</span>
+              <span className="text-xs font-bold uppercase tracking-widest">Backoffice MaBorneRecharge</span>
             </div>
-            <h1 className="text-4xl font-black text-white italic tracking-tighter">EV_LEAD DATA</h1>
+            <h1 className="text-4xl font-black text-white italic tracking-tighter">DATA DASHBOARD</h1>
           </div>
           <nav className="flex gap-4">
             <a href="/admin/stats" className="bg-white/5 hover:bg-white/10 px-6 py-3 rounded-xl text-sm font-bold border border-white/10 transition-all">
@@ -126,8 +126,8 @@ export default function AdminOverview()
                         <div><strong className="text-white block">API Scraping</strong> Python extraction Qualifelec.</div>
                     </li>
                     <li className="flex items-start gap-3">
-                        <span className="material-symbols-outlined text-blue-500 text-sm">hub</span>
-                        <div><strong className="text-white block">Lead Broker</strong> Vente Webhook partenaires.</div>
+                        <span className="material-symbols-outlined text-cyan-500 text-sm">hub</span>
+                        <div><strong className="text-white block">MaBorne Broker</strong> Vente Webhook partenaires.</div>
                     </li>
                 </ul>
             </section>

@@ -18,7 +18,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       <nav className="p-6 border-b border-white/5 flex justify-between items-center bg-slate-900/50 backdrop-blur-xl sticky top-0 z-50">
         <a href="/" className="font-black text-xl tracking-tighter text-white flex items-center gap-2">
             <span className="material-symbols-outlined text-cyan-400">electric_car</span>
-            IRVE_<span className="text-cyan-400">PRO</span>
+            MaBorne<span className="text-cyan-400">Recharge</span>
         </a>
         <button className="text-[10px] font-bold uppercase tracking-widest bg-cyan-500/10 text-cyan-400 px-6 py-3 rounded-full border border-cyan-500/20 hover:bg-cyan-500/20 transition-all">
             Contact Expert
@@ -117,8 +117,8 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
 
       {/* FOOTER */}
       <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest flex flex-col gap-4">
-        <div>IRVE_PRO — Expert local à {city.name}</div>
-        <a href="/devenir-partenaire" className="text-slate-800 hover:text-cyan-800 transition-colors">VOUS ÊTES INSTALLATEUR À {city.name.toUpperCase()} ? REJOINGNEZ-NOUS</a>
+        <div>MaBorneRecharge — Expert local à {city.name}</div>
+        <a href="/devenir-partenaire" className="text-slate-800 hover:text-cyan-800 transition-colors">VOUS ÊTES INSTALLATEUR À {city.name.toUpperCase()} ? REJOIGNEZ-NOUS</a>
       </footer>
     </main>
   );

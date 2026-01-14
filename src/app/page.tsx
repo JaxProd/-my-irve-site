@@ -25,7 +25,7 @@ export default function Home()
       <nav className="p-6 flex justify-between items-center absolute w-full z-50">
         <div className="font-black text-xl tracking-tighter text-white flex items-center gap-2">
             <span className="material-symbols-outlined text-cyan-400">electric_car</span>
-            IRVE_<span className="text-cyan-400">PRO</span>
+            MaBorne<span className="text-cyan-400">Recharge</span>
         </div>
         <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-slate-400">
             <a href="/devenir-partenaire" className="hover:text-cyan-400 transition-colors">Installateurs</a>
@@ -43,7 +43,7 @@ export default function Home()
           <div className="text-left">
             <div className="flex items-center gap-3 mb-6">
                 <span className="h-[1px] w-12 bg-cyan-500"></span>
-                <span className="text-cyan-500 text-xs font-bold uppercase tracking-[0.4em]">Expertise IRVE 2026</span>
+                <span className="text-cyan-500 text-xs font-bold uppercase tracking-[0.4em]">Expertise Bornes 2026</span>
             </div>
             <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter text-or-bleu">
               La Ruée vers<br /> l'<span className="text-cyan-400">Or Bleu</span>
@@ -103,7 +103,7 @@ export default function Home()
                     <span className="text-[10px] font-bold uppercase tracking-widest text-cyan-400">Direct Live</span>
                 </div>
                 <p className="text-sm font-bold text-white mb-1">+24 Demandes de devis</p>
-                <p className="text-[10px] text-slate-500 italic">Dernières 24h sur le réseau IRVE_PRO</p>
+                <p className="text-[10px] text-slate-500 italic">Dernières 24h sur MaBorneRecharge.fr</p>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function Home()
 
       {/* FOOTER */}
       <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest">
-        © 2026 IRVE_PRO — Technologies pour la transition énergétique
+        © 2026 MaBorneRecharge — Technologies pour la transition énergétique
       </footer>
     </main>
   );
