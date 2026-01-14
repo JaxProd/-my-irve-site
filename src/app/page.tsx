@@ -67,18 +67,29 @@ export default function Home()
 
       {/* QUICK LINKS (MAILLAGE) */}
       <section className="max-w-4xl mx-auto px-6 pb-20">
-         <h2 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-6 text-center">Villes Populaires</h2>
+         <h2 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-6 text-center">Villes à fort potentiel</h2>
          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            { (cities as any[]).slice(0, 8).map(city => 
-            (
-              <a 
-                key={city.id} 
-                href={`/${city.slug}`} 
-                className="p-4 glass rounded-xl text-center text-sm hover:border-blue-500 transition-all"
-              >
-                {city.name}
-              </a>
-            ))}
+            { (cities as any[])
+              .sort((a, b) => 
+              {
+                // On cherche les villes avec bcp d'habitants et peu de bornes
+                // Un score simple : population / (bornes + 1)
+                const scoreA = a.population / (a.bornes + 1);
+                const scoreB = b.population / (b.bornes + 1);
+                return scoreB - scoreA;
+              })
+              .slice(0, 8)
+              .map(city => 
+              (
+                <a 
+                  key={city.id} 
+                  href={`/${city.slug}`} 
+                  className="p-4 glass rounded-xl text-center text-sm hover:border-blue-500 transition-all flex flex-col gap-1"
+                >
+                  <span className="font-bold">{city.name}</span>
+                  <span className="text-[10px] opacity-50">{city.bornes} bornes</span>
+                </a>
+              ))}
          </div>
       </section>
     </main>
