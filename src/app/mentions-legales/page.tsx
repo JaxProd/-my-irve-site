@@ -24,6 +24,7 @@ export default function MentionsLegales()
             <p className="text-slate-400 leading-relaxed">
               Le site <strong>MaBorneRecharge.fr</strong> est édité par :<br /><br />
               <strong>Sylvain CHURLET</strong><br />
+              SIRET : 451 784 052 00040<br />
               Adresse : 304B rue Garibaldi, 69007 LYON<br />
               Email : contact@MaBorneRecharge.fr<br />
               Téléphone : 06 62 03 68 41<br />
