@@ -137,6 +137,16 @@ export default function DevenirPartenaire()
                       placeholder="Email professionnel" 
                       className="w-full bg-slate-900 border border-white/5 p-4 rounded-2xl outline-none focus:border-cyan-500/50" 
                     />
+                    <div className="flex items-start gap-3 px-2">
+                      <input 
+                        type="checkbox" 
+                        required 
+                        className="mt-1 accent-cyan-500 w-4 h-4 cursor-pointer" 
+                      />
+                      <p className="text-[9px] text-slate-600 leading-tight">
+                        J'accepte de recevoir des demandes de leads qualifiés et je reconnais avoir lu les <a href="/conditions-generales" className="text-cyan-500 underline">CGU</a>.
+                      </p>
+                    </div>
                     <button 
                       type="submit"
                       className="w-full bg-cyan-500 text-black font-black py-5 rounded-2xl mt-4 hover:shadow-cyan-500/20 shadow-xl transition-all uppercase tracking-widest text-xs cursor-pointer"
@@ -152,8 +162,13 @@ export default function DevenirPartenaire()
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest">
-        © 2026 MaBorneRecharge — Espace Partenaires Agréés
+      <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest flex flex-col gap-4">
+        <div>© 2026 MaBorneRecharge — Espace Partenaires Agréés</div>
+        <div className="flex justify-center gap-6">
+            <a href="/mentions-legales" className="hover:text-cyan-400">Mentions Légales</a>
+            <a href="/politique-confidentialite" className="hover:text-cyan-400">Confidentialité</a>
+            <a href="/conditions-generales" className="hover:text-cyan-400">CGU</a>
+        </div>
       </footer>
     </main>
   );

@@ -142,8 +142,13 @@ export default function Home()
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest">
-        © 2026 MaBorneRecharge — Technologies pour la transition énergétique
+      <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest flex flex-col gap-4">
+        <div>© 2026 MaBorneRecharge — Technologies pour la transition énergétique</div>
+        <div className="flex justify-center gap-6">
+            <a href="/mentions-legales" className="hover:text-cyan-400">Mentions Légales</a>
+            <a href="/politique-confidentialite" className="hover:text-cyan-400">Confidentialité</a>
+            <a href="/conditions-generales" className="hover:text-cyan-400">CGU</a>
+        </div>
       </footer>
     </main>
   );

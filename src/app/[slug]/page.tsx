@@ -40,7 +40,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
           </h1>
           
           <p className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            Profitez du crédit d'impôt de <span className="text-cyan-400 font-bold">500€</span> et d'une installation conforme aux normes de sécurité à <span className="text-white font-bold">{city.name}</span>.
+            Vous <span className="text-cyan-400 font-bold italic">pouvez être éligible</span> au crédit d'impôt de <span className="text-white font-bold italic">500€</span> et à une installation conforme aux normes de sécurité à <span className="text-white font-bold">{city.name}</span>.
           </p>
 
           {/* BADGES / SOCIAL PROOF */}
@@ -75,7 +75,7 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
           </div>
           
           <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-white mb-2">Étude Personnalisée</h3>
+            <h3 className="text-2xl font-bold text-white mb-2 italic">Étude Personnalisée</h3>
             <p className="text-slate-500 text-sm">Recevez une proposition technique pour votre maison à {city.name}.</p>
           </div>
           
@@ -105,6 +105,17 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
               />
             </div>
 
+            <div className="flex items-start gap-3 px-3">
+              <input 
+                type="checkbox" 
+                required 
+                className="mt-1 accent-cyan-500 w-4 h-4 cursor-pointer" 
+              />
+              <p className="text-[10px] text-slate-500 leading-tight">
+                J'accepte que mes données soient exclusivement transmises à un <strong className="text-slate-300">expert local certifié IRVE</strong> pour l'établissement de mon devis. <a href="/politique-confidentialite" className="text-cyan-500 underline">Voir plus</a>.
+              </p>
+            </div>
+
             <button 
               type="submit" 
               className="w-full bg-white text-black font-black py-6 rounded-[1.5rem] mt-4 hover:scale-[1.02] active:scale-95 transition-all shadow-xl hover:shadow-white/10 uppercase tracking-widest cursor-pointer"
@@ -119,6 +130,11 @@ export default async function CityPage({ params }: { params: Promise<{ slug: str
       <footer className="border-t border-white/5 py-12 text-center text-[10px] text-slate-600 uppercase tracking-widest flex flex-col gap-4">
         <div>MaBorneRecharge — Expert local à {city.name}</div>
         <a href="/devenir-partenaire" className="text-slate-800 hover:text-cyan-800 transition-colors">VOUS ÊTES INSTALLATEUR À {city.name.toUpperCase()} ? REJOIGNEZ-NOUS</a>
+        <div className="flex justify-center gap-6 mt-4">
+            <a href="/mentions-legales" className="hover:text-cyan-400">Mentions Légales</a>
+            <a href="/politique-confidentialite" className="hover:text-cyan-400">Confidentialité</a>
+            <a href="/conditions-generales" className="hover:text-cyan-400">CGU</a>
+        </div>
       </footer>
     </main>
   );
